@@ -1,0 +1,87 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --background-image: url('https://files.catbox.moe/z87cm9.jpg');
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --background-image: url('https://files.catbox.moe/9r7gmu.jpg');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-color);
+  height: 100vh;
+  width: 100vw;
+  transition: background-color 0.5s ease, background-image 0.8s ease, color 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tombol toggle mode */
+#toggleMode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  z-index: 999;
+}
+
+#toggleMode:hover {
+  transform: scale(1.1);
+}
+
+/* Kontainer tengah */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+/* Tombol Get Code */
+.get-code {
+  margin-top: 1.5rem;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  background: var(--text-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.get-code:hover {
+  transform: scale(1.07);
+  opacity: 0.95;
+}
