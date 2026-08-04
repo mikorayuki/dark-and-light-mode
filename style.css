@@ -34,7 +34,6 @@ body {
   overflow: hidden;
 }
 
-/* Tombol toggle mode */
 #toggleMode {
   position: fixed;
   top: 20px;
@@ -55,7 +54,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Kontainer tengah */
 .container {
   text-align: center;
   background: rgba(255, 255, 255, 0.15);
@@ -66,8 +64,8 @@ body {
   transition: all 0.4s ease;
 }
 
-/* Tombol Get Code */
 .get-code {
+  display: inline-block;
   margin-top: 1.5rem;
   padding: 12px 28px;
   font-size: 16px;
@@ -77,6 +75,7 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
